@@ -23,4 +23,4 @@ const submit = async ()=>{
     <input class="px-4 py-4 bg-amber-300 hover:bg-yellow-300 rounded-lg border border blue m-6" v-model="description" placeholder="Description">
   </label>
   <button class="px-4 py-4 bg-zinc-200 hover:bg-zinc-600 rounded-full border border blue m-6 duration-200" @click="submit">SUBMIT</button>
-</templa
+</template>
