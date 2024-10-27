@@ -99,7 +99,7 @@ const submit = async () => {
   filter: drop-shadow(0 0 10px rgba(230, 255, 90, 0.7));
 }
 
-
+;
 
 /* Glow effect on hover */
 .glow-image:hover {
@@ -107,17 +107,17 @@ const submit = async () => {
 }
 
 body {
-  background:linear-gradient(black,green);
+  background-color: rgb(40, 40, 40);
 }
 </style>
+
 <template>
-  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-        <img src="./assets/unifywhite.png" alt="Description of the image" class="fel x mx-auto glow-image"
-          style="width: 240px; height: auto;" />
-      </a>
   <div class="w-full min-h-screen flex flex-col">
     <div class="mx-auto flex flex-col">
-      
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+        <img src="./assets/unifywhite.png" alt="Description of the image" class="glow-image"
+          style=" width: 160px; height: auto;" />
+      </a>
       <h1 class="flex mx-auto" style="color: azure;">
         WANNA HERE A MASTERPIECE?
       </h1>
@@ -160,12 +160,16 @@ body {
 
   
 
-      <form @submit="(e) => e.preventDefault()" class="my-5 mx-3 flex flex-col">
-        <input class="px-4 py-4 bg-azure-300 hover:bg-yellow-300 rounded-lg border blue mx-6 my-5 "
+      <form @submit="(e) => e.preventDefault()" class="my-5 mx-3">
+        <label>
+        <input class="px-4 py-4 bg-azure-300 hover:bg-yellow-300 rounded-lg border border blue mx-6 my-5 "
           v-model="title" placeholder="Name">
-        <input class="px-4 py-4 bg-azure-300 hover:bg-yellow-300 rounded-lg border blue m-6"
+      </label>
+      <label>
+        <input class="px-4 py-4 bg-azure-300 hover:bg-yellow-300 rounded-lg border border blue m-6"
           v-model="description" placeholder="University">
-        <button class="px-4 py-4 bg-zinc-200 hover:bg-zinc-600 rounded-full border blue m-6 duration-200"
+      </label>
+        <button class="px-4 py-4 bg-zinc-200 hover:bg-zinc-600 rounded-full border border blue m-6 duration-200"
           @click="submit">SUBMIT</button>
       </form>
 
