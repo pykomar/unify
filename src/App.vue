@@ -15,7 +15,7 @@
       anthemAudioUitm.value.play()
   }else{
     console.log(anthemAudioUitm.value)
-  }
+  }}
 
   function playAnthemUia(){
     if(anthemAudioUia.value){
