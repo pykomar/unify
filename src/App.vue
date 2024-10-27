@@ -107,7 +107,7 @@ const submit = async () => {
 }
 
 body {
-  background:linear-gradient(black,green);
+  background:linear-gradient(black,rgb(71, 180, 71));
 }
 </style>
 <template>
